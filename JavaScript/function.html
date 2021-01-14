@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function</title>
+</head>
+<body>
+
+<script>
+
+    //Normal Function
+
+    let n1="Ali";
+    let n2="Joy";
+    let n3="Sagar";
+    let n4="Tom";
+    let n5="Bijoy";
+
+    function greet(n){
+        console.log("My name is "+ n);
+    }
+
+    greet(n1);
+    greet(n2);
+    greet(n3);
+    greet(n4);
+    greet(n5);
+
+    //Default Parameter
+    
+    let m1="Ali";
+    let v1="Good Morning";
+ 
+    function greet1(m1, v1="Good Evening"){
+        console.log(v1 +"! My name is "+ m1);
+    }
+
+    greet1(m1,v1);
+    greet1(m1);
+
+    //Return value in Function
+
+    function sum(a,b,c)
+    {
+        d=a+b+c;
+        return d;
+       
+        // Normally function doesnot return any value so we used retun keyword. 
+        //Return pasot aku aku print nhoi. (Return should be last line)
+    }
+
+    let returnval=sum(5,5,5);
+    console.log(returnval);
+</script>
+</body>
+</html>

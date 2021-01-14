@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="conatiner">
+        <p id='para'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, iure aut vero voluptatem
+            molestiae rem accusamus dolore. Animi optio doloribus consequuntur nisi quidem facilis quisquam, eum a
+            veritatis
+            libero cupiditate. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis reprehenderit voluptate
+            perspiciatis dignissimos, totam, ratione distinctio consequatur a cumque, excepturi blanditiis. Dolore
+            corrupti
+            repellendus itaque facilis nisi provident commodi rerum ducimus eum neque cupiditate impedit laudantium in
+            nostrum qui, ullam iure labore nihil minima distinctio id omnis asperiores ipsam ad!</p>
+    </div>
+    <button onclick="hide()" id='btn'>Show / Hide </button>
+
+    <script>
+        function hide() {
+            let btn = document.getElementById('btn');
+            let para = document.getElementById('para');
+
+            if (para.style.display != 'none') {
+                para.style.display = 'none';
+            }
+            else{
+                para.style.display = 'block';
+            }
+        }
+
+
+        let para = document.getElementById('para');
+        para.addEventListener('mouseover', function run(){
+            alert('Mouse Inside')
+        });
+
+        para.addEventListener('mouseout', function run(){
+            alert('Mouse now went outside')
+        });
+    </script>
+</body>
+
+</html>

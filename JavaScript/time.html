@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time</title>
+</head>
+
+<body>
+    <span id='time'></span>
+    <script>
+        function greet() {
+            console.log("Hello Good Morning ");
+        }
+        timeout = setTimeout(greet, 2000);
+        clearTimeout(timeout);
+
+        timeout1 = setInterval(greet, 1000);
+        clearTimeout(timeout1);
+
+
+        // Display Time 
+
+        function displayTime() {
+            time = new Date();
+            console.log(time);
+            document.getElementById('time').innerHTML = time;
+        }
+        setInterval(displayTime, 1000);
+    </script>
+</body>
+
+</html>

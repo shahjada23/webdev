@@ -1,0 +1,73 @@
+/* Navigation Bar */
+
+#nav
+{
+ flex-direction: column;
+
+}
+#nav ul li a{
+  font-size: 1.5rem;
+    padding:0px 20px;
+  
+}
+
+
+/*Home Section */
+
+#home
+{
+height: 380px;
+padding: 10px 10px;
+text-align: center;
+}
+
+#home::before
+{
+height: 380px;
+
+}
+
+#home p
+{
+font-size:1.5rem;
+}
+
+/* Service Conatianer */
+#services
+{
+    flex-direction: column;
+}
+
+
+/* client Section */
+
+#clients{
+flex-direction: column;
+    }
+
+#clients img{
+width: 200px;
+height: 200px;
+padding: 5px;
+}
+
+
+/* contact  */
+
+
+
+/* utility class */
+
+#h-primary
+{
+    font-size: 1.5rem;
+}
+
+#btn
+{
+    font-size: 2rem;
+    padding: 10px 10px;
+}
+
+
+
