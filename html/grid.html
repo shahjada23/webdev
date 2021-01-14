@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid</title>
+    <style>
+        
+        #navbar {
+            grid-area: navbar;
+        }
+
+        #section {
+            grid-area: section;
+        }
+
+        #aside {
+            grid-area: aside;
+        }
+
+        .item {
+            background-color: yellow;
+            border: 3px solid black;
+            padding: 12px 23px;
+        }
+
+        .container {
+            display: grid;
+            /* grid-template-columns: 500px 100px 1000px; */
+            /* grid-template-columns: repeat(2, auto); */
+            grid-gap: 0.1rem;
+            /* grid-template-columns: 1fr 4fr 1fr; */
+
+            /* grid-template-rows: 4fr 4fr 4fr;
+            grid-auto-rows: 5fr;
+            grid-template-columns: 2fr 2fr 2fr; */
+
+            /* grid-template-columns: 200px 300px 300px; */
+
+            justify-content: center;
+
+            /* grid-template-columns: repeat(auto-fit, minmax(800px, 800px)); */
+
+            grid-template-areas:
+                'navbar navbar navbar navbar'
+                'section section section aside';
+        }
+
+        .item {
+            background: red;
+            margin: 5px;
+            border: 2px solid black;
+            padding: 20px;
+        }
+
+        .item:first-child {
+            /* grid-column-start: 1;
+            grid-column-end: 5; */
+
+            /* grid-row-start: 1;
+            grid-row-end: 5; */
+
+            /* grid-column: 1 / span 3;
+            grid-row: 1 / span 1; */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div id="navbar" class="item"></div>
+        <div id="section" class="item">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis, tempore
+            similique voluptates, consectetur odit nisi optio dolorem unde esse hic assumenda aliquid quas quis sequi!
+            Adipisci, esse. Rerum optio animi, magnam in ipsa saepe voluptatibus ullam dolorum ab aliquam itaque.</div>
+        <div id="aside" class="item">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit debitis fuga hic
+            officia voluptatibus harum atque illum similique iure ut. Unde iure fuga ipsa ab? Quam praesentium a magni,
+            consequatur accusamus voluptas ullam, quisquam in voluptatum vero quas animi ipsam! Aspernatur minima
+            recusandae nostrum ipsam odit deleniti, sequi illo dolores.</div>
+    </div>
+    <!-- <div class="item">This is Item-1</div>
+        <div class="item">This is Item-2</div>
+        <div class="item">This is Item-3</div>
+        <div class="item">This is Item-4</div>
+        <div class="item">This is Item-5</div>
+        <div class="item">This is Item-6</div>
+        <div class="item">This is Item-7</div>
+        <div class="item">This is Item-8</div>
+        <div class="item">This is Item-9</div>
+        <div class="item">This is Item-4</div>
+        <div class="item">This is Item-5</div>
+        <div class="item">This is Item-6</div>
+        <div class="item">This is Item-7</div>
+        <div class="item">This is Item-8</div>
+        <div class="item">This is Item-9</div>
+    </div> -->
+</body>
+
+</html>

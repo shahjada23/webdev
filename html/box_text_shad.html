@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>box-shaddow</title>
+</head>
+<style>
+    section {
+        display: flex;
+        margin: 2px 2px;
+        font-size: 30px;
+    }
+
+    .container {
+        background-color: rgb(242, 243, 180);
+        /* box-shadow: 5px 5px red; */
+        /* box-shadow: -5px -5px red; */
+        /* box-shadow: 5px 5px 20px black; */
+        /* box-shadow: 5px 5px 20px 10px black; */
+        /* box-shadow: inset 5px 5px; */
+        margin: 5px 5px;
+        padding: 2px 2px 2px 2px;
+        text-align: center;
+    }
+
+    #text {
+        text-shadow: 1px 1px red;
+        text-shadow: 1px 1px 20px red;
+        color: red;
+    }
+</style>
+
+<body>
+</body>
+<section>
+    <div class="container" id="container-1">
+        <p id="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste sunt, distinctio, provident deleniti,
+            fuga
+            quidem
+            laborum asperiores sint dicta incidunt quaerat mollitia? Vero laudantium optio magnam, dolorum ipsam
+            necessitatibus et.</p>
+    </div>
+    <div class="container" id="container-2">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste sunt, distinctio, provident deleniti, fuga
+            quidem
+            laborum asperiores sint dicta incidunt quaerat mollitia? Vero laudantium optio magnam, dolorum ipsam
+            necessitatibus et.</p>
+    </div>
+    <div class="container" id="container-3">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste sunt, distinctio, provident deleniti, fuga
+            quidem
+            laborum asperiores sint dicta incidunt quaerat mollitia? Vero laudantium optio magnam, dolorum ipsam
+            necessitatibus et.</p>
+    </div>
+</section>
+
+</html>

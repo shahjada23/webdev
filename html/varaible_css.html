@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS variable</title>
+
+    <style>
+        /* Define global variable  */
+        :root {
+            --box-color: yellow;
+            --max-width:300px;
+        }
+
+        section {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .card {
+            /* CSS variable creation */
+            /* --box-color:yellow; */
+
+            /* Css Varaible call */
+            background-color: var(--box-color);
+            width: var(--max-width);
+            padding: 100px 100px;
+            margin: 20px 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <div class="card" id="card-1"></div>
+        <div class="card" id="card-2"></div>
+        <div class="card" id="card-3"></div>
+    </section>
+</body>
+
+</html>
